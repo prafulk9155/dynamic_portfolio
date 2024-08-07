@@ -1,0 +1,44 @@
+{
+    "name": "John Doe",
+    "job_title": "Software Engineer",
+    "description": "Passionate software engineer with experience in building scalable web applications.",
+    "logo": "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg",
+    "favicon": "path/to/favicon.ico",
+    "website": "https://johndoe.com",
+    "github": "https://github.com/johndoe",
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "email": "johndoe@example.com",
+    "skills": ["JavaScript", "React", "Node.js", "CSS", "HTML"],
+    "experience": [
+        {
+            "position": "Frontend Developer",
+            "imgUrl":"",
+            "company": "Tech Company",
+            "duration": "2021 - Present",
+            "responsibilities": [
+                "Developed user-friendly web applications",
+                "Collaborated with designers and backend developers",
+                "Participated in code reviews"
+            ]
+        },
+        {
+            "position": "Intern",
+            "company": "Startup",
+            "imgUrl":"",
+            "duration": "2020 - 2021",
+            "responsibilities": [
+                "Assisted in developing frontend components",
+                "Learned about Agile methodologies",
+                "Conducted testing and debugging"
+            ]
+        }
+    ],
+    "about":{
+        "first":"Hello there",
+        "second":"I am ",
+        "third":"Thats Why ",
+        "fourth":"All about"
+    },
+    "phone": 1234567890
+}
