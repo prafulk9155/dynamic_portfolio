@@ -9,11 +9,17 @@
     "linkedin": "https://linkedin.com/in/johndoe",
     "twitter": "https://twitter.com/johndoe",
     "email": "johndoe@example.com",
-    "skills": ["JavaScript", "React", "Node.js", "CSS", "HTML"],
+    "skills": [
+        {"name": "JavaScript", "icon": "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg"},
+        {"name": "React", "icon": "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg"},
+        {"name": "Node.js", "icon": "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg"},
+        {"name": "CSS", "icon": "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg"},
+        {"name": "HTML", "icon": "assets/about02.png"}
+    ],
     "experience": [
         {
             "position": "Frontend Developer",
-            "imgUrl":"",
+            "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQABqQIdskCD9BK0I81EbVfV9tTz320XvJ35A&s",
             "company": "Tech Company",
             "duration": "2021 - Present",
             "responsibilities": [
@@ -25,7 +31,7 @@
         {
             "position": "Intern",
             "company": "Startup",
-            "imgUrl":"",
+            "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQABqQIdskCD9BK0I81EbVfV9tTz320XvJ35A&s",
             "duration": "2020 - 2021",
             "responsibilities": [
                 "Assisted in developing frontend components",

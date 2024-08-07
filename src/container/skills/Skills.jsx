@@ -7,6 +7,7 @@ import "./Skills.scss";
 import Leetcode from "./leetcode";
 import HackerRank from "./hackerRank";
 import GitHub from "./github";
+import data from '../../assets/json/profile.json';
 
 const ACCOMPLISHMENTS_TAGS = [
   {
@@ -28,13 +29,7 @@ const Skills = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
-  useEffect(() => {
-    const skillsQuery = '*[_type == "skills"]';
 
-    client.fetch(skillsQuery).then((data) => {
-      setSkills(data);
-    });
-  }, []);
 
   const handleTagFilter = (index) => {
     setActiveIndex(index);
@@ -52,7 +47,7 @@ const Skills = () => {
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
-          {skills.map((skill) => (
+          {data.skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
@@ -63,7 +58,7 @@ const Skills = () => {
                 className="app__flex"
                 style={{ backgroundColor: skill.bgColor }}
               >
-                <img src={urlFor(skill.icon)} alt={skill.name} />
+                {/* <img src={urlFor(skill.icon)} alt={skill.name} /> */}
               </div>
               <p className="p-text">{skill.name}</p>
             </motion.div>
