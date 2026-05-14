@@ -1,0 +1,455 @@
+[
+  {
+    "id": 1,
+    "slug": "ai-learning-platform",
+    "title": "AI Learning Platform",
+    "shortDescription": "AI-powered exam preparation platform with personalized study paths and real-time analytics.",
+    "fullDescription": "A comprehensive AI-powered learning platform designed to help students prepare for competitive exams. It leverages machine learning algorithms to create personalized study paths, track progress in real-time, and provide intelligent recommendations based on performance patterns. The platform features an interactive dashboard, adaptive testing, and collaborative study tools.",
+    "category": ["AI", "Education", "SaaS"],
+    "techStack": ["React", "Node.js", "MongoDB", "AWS", "Python", "TensorFlow"],
+    "features": [
+      "AI-powered personalized study recommendations",
+      "Real-time analytics dashboard",
+      "Adaptive testing engine",
+      "Collaborative study rooms",
+      "Progress tracking with visual reports",
+      "Offline mode with sync"
+    ],
+    "status": "In Progress",
+    "role": "Full Stack Developer",
+    "teamSize": "3",
+    "timeline": "Jan 2025 - Present",
+    "challenges": [
+      "Building an efficient recommendation engine with limited training data",
+      "Handling real-time sync across multiple devices",
+      "Optimizing MongoDB queries for complex analytics aggregations"
+    ],
+    "futureImprovements": [
+      "Add voice-based learning mode",
+      "Integrate with LMS platforms like Canvas and Blackboard",
+      "Mobile app with React Native"
+    ],
+    "github": "https://github.com/username/ai-learning-platform",
+    "liveDemo": "https://ai-learning-demo.com",
+    "thumbnail": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [
+      "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": 2,
+    "slug": "devops-pipeline-manager",
+    "title": "DevOps Pipeline Manager",
+    "shortDescription": "Visual CI/CD pipeline builder with real-time monitoring and automated deployment workflows.",
+    "fullDescription": "A visual CI/CD pipeline management tool that allows teams to design, monitor, and optimize their deployment workflows through an intuitive drag-and-drop interface. It integrates with major cloud providers and supports custom pipeline stages, rollback mechanisms, and real-time log streaming.",
+    "category": ["DevOps", "SaaS", "Developer Tools"],
+    "techStack": ["TypeScript", "React", "Go", "Docker", "Kubernetes", "PostgreSQL"],
+    "features": [
+      "Drag-and-drop pipeline builder",
+      "Real-time log streaming",
+      "Automated rollback on failure",
+      "Multi-cloud deployment support",
+      "Pipeline templates library",
+      "Slack and email notifications"
+    ],
+    "status": "Completed",
+    "role": "Lead Developer",
+    "teamSize": "5",
+    "timeline": "Mar 2024 - Dec 2024",
+    "challenges": [
+      "Designing a performant drag-and-drop interface for complex pipelines",
+      "Implementing reliable rollback mechanisms across heterogeneous environments",
+      "Handling concurrent pipeline executions without resource conflicts"
+    ],
+    "futureImprovements": [
+      "AI-based pipeline optimization suggestions",
+      "Support for GitOps workflows",
+      "Cost estimation for pipeline runs"
+    ],
+    "github": "https://github.com/username/devops-pipeline-manager",
+    "liveDemo": "https://devops-pipeline-demo.com",
+    "thumbnail": "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [
+      "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": 3,
+    "slug": "ecommerce-marketplace",
+    "title": "E-Commerce Marketplace",
+    "shortDescription": "Full-stack marketplace with real-time inventory, payments, and seller analytics.",
+    "fullDescription": "A scalable e-commerce marketplace supporting multiple sellers, real-time inventory management, secure payment processing, and comprehensive seller analytics. Built with microservices architecture for high availability and horizontal scaling.",
+    "category": ["Full Stack", "E-Commerce", "SaaS"],
+    "techStack": ["Next.js", "Node.js", "PostgreSQL", "Redis", "Stripe", "Elasticsearch"],
+    "features": [
+      "Multi-vendor seller dashboard",
+      "Real-time inventory tracking",
+      "Stripe payment integration",
+      "Elasticsearch-powered product search",
+      "Order management with notifications",
+      "Seller analytics and reporting"
+    ],
+    "status": "Completed",
+    "role": "Full Stack Developer",
+    "teamSize": "4",
+    "timeline": "Jun 2024 - Nov 2024",
+    "challenges": [
+      "Maintaining data consistency across microservices",
+      "Implementing efficient full-text search across millions of products",
+      "Handling flash sale traffic spikes with Redis caching"
+    ],
+    "futureImprovements": [
+      "AI-powered product recommendations",
+      "Mobile app with React Native",
+      "Multi-currency and localization support"
+    ],
+    "github": "https://github.com/username/ecommerce-marketplace",
+    "liveDemo": "https://ecommerce-demo.com",
+    "thumbnail": "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [
+      "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    "featured": true,
+    "order": 3
+  },
+  {
+    "id": 4,
+    "slug": "realtime-chat-app",
+    "title": "Realtime Chat Application",
+    "shortDescription": "End-to-end encrypted messaging platform with video calls and file sharing.",
+    "fullDescription": "A secure, real-time messaging application featuring end-to-end encryption, video calling, file sharing, and group chats. Built with WebSocket technology for instant message delivery and presence indicators.",
+    "category": ["Full Stack", "Communication"],
+    "techStack": ["React", "Socket.io", "Node.js", "MongoDB", "WebRTC", "Redis"],
+    "features": [
+      "End-to-end encrypted messaging",
+      "Video and voice calls via WebRTC",
+      "File sharing with preview",
+      "Group chats with admin controls",
+      "Message reactions and threads",
+      "Online presence indicators"
+    ],
+    "status": "Completed",
+    "role": "Full Stack Developer",
+    "teamSize": "2",
+    "timeline": "Sep 2024 - Jan 2025",
+    "challenges": [
+      "Implementing reliable E2E encryption without compromising UX",
+      "Handling WebRTC connection stability across networks",
+      "Managing message ordering and delivery guarantees at scale"
+    ],
+    "futureImprovements": [
+      "Screen sharing during calls",
+      "Bot framework for integrations",
+      "Self-destructing messages"
+    ],
+    "github": "https://github.com/username/realtime-chat-app",
+    "liveDemo": "https://chat-demo.com",
+    "thumbnail": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 4
+  },
+  {
+    "id": 5,
+    "slug": "task-management-saas",
+    "title": "TaskFlow - Project Management SaaS",
+    "shortDescription": "Kanban-style project management tool with team collaboration and time tracking.",
+    "fullDescription": "A feature-rich project management SaaS application with Kanban boards, Gantt charts, team collaboration tools, and built-in time tracking. Designed for agile teams to manage sprints, track progress, and deliver projects on time.",
+    "category": ["SaaS", "Productivity", "Full Stack"],
+    "techStack": ["React", "TypeScript", "Node.js", "PostgreSQL", "Redis", "Docker"],
+    "features": [
+      "Drag-and-drop Kanban boards",
+      "Gantt chart view for timelines",
+      "Built-in time tracking",
+      "Team collaboration with comments",
+      "Sprint planning and retrospectives",
+      "Custom workflow automation"
+    ],
+    "status": "In Progress",
+    "role": "Lead Frontend Developer",
+    "teamSize": "6",
+    "timeline": "Oct 2024 - Present",
+    "challenges": [
+      "Building a performant drag-and-drop system for large boards",
+      "Implementing real-time collaboration without conflicts",
+      "Designing flexible workflow automation engine"
+    ],
+    "futureImprovements": [
+      "AI task prioritization",
+      "Integration with GitHub and Jira",
+      "Mobile app with offline support"
+    ],
+    "github": "https://github.com/username/taskflow",
+    "liveDemo": "https://taskflow-demo.com",
+    "thumbnail": "https://images.pexels.com/photos/3785704/pexels-photo-3785704.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [
+      "https://images.pexels.com/photos/3785704/pexels-photo-3785704.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    "featured": true,
+    "order": 5
+  },
+  {
+    "id": 6,
+    "slug": "ai-image-generator",
+    "title": "AI Image Generator",
+    "shortDescription": "Text-to-image generation tool powered by Stable Diffusion with custom model fine-tuning.",
+    "fullDescription": "An AI image generation platform that allows users to create stunning visuals from text prompts using Stable Diffusion. Features include custom model fine-tuning, style transfer, inpainting, and a community gallery for sharing creations.",
+    "category": ["AI", "Creative Tools"],
+    "techStack": ["Python", "FastAPI", "React", "Stable Diffusion", "AWS S3", "Redis"],
+    "features": [
+      "Text-to-image generation",
+      "Custom model fine-tuning with LoRA",
+      "Style transfer and inpainting",
+      "Community gallery and sharing",
+      "Batch generation with queue system",
+      "Image upscaling with AI"
+    ],
+    "status": "Completed",
+    "role": "AI Engineer & Full Stack Developer",
+    "teamSize": "Solo",
+    "timeline": "Feb 2024 - May 2024",
+    "challenges": [
+      "Optimizing inference speed for real-time generation",
+      "Managing GPU resource allocation for concurrent users",
+      "Implementing content filtering and safety checks"
+    ],
+    "futureImprovements": [
+      "Video generation support",
+      "API for third-party integrations",
+      "Mobile app with optimized models"
+    ],
+    "github": "https://github.com/username/ai-image-generator",
+    "liveDemo": "https://ai-image-demo.com",
+    "thumbnail": "https://images.pexels.com/photos/8294554/pexels-photo-8294554.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 6
+  },
+  {
+    "id": 7,
+    "slug": "health-fitness-tracker",
+    "title": "Health & Fitness Tracker",
+    "shortDescription": "Comprehensive health tracking app with workout plans, nutrition logging, and progress analytics.",
+    "fullDescription": "A full-featured health and fitness tracking application that combines workout planning, nutrition logging, sleep tracking, and progress analytics into one unified platform. Features AI-powered workout recommendations and social challenges.",
+    "category": ["Health", "Mobile", "SaaS"],
+    "techStack": ["React Native", "Node.js", "MongoDB", "TensorFlow Lite", "Firebase"],
+    "features": [
+      "Custom workout plan builder",
+      "Nutrition logging with barcode scanner",
+      "Sleep tracking integration",
+      "Progress analytics with charts",
+      "Social challenges and leaderboards",
+      "AI workout recommendations"
+    ],
+    "status": "Completed",
+    "role": "Mobile Developer",
+    "teamSize": "3",
+    "timeline": "Apr 2024 - Aug 2024",
+    "challenges": [
+      "Building offline-first architecture for gym environments",
+      "Integrating with diverse health APIs and devices",
+      "Optimizing TensorFlow Lite models for mobile inference"
+    ],
+    "futureImprovements": [
+      "Wearable device integration",
+      "Meal planning with grocery lists",
+      "Personal trainer video calls"
+    ],
+    "github": "https://github.com/username/fitness-tracker",
+    "liveDemo": "https://fitness-demo.com",
+    "thumbnail": "https://images.pexels.com/photos/4164761/pexels-photo-4164761.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 7
+  },
+  {
+    "id": 8,
+    "slug": "cloud-infrastructure-visualizer",
+    "title": "Cloud Infrastructure Visualizer",
+    "shortDescription": "Interactive visualization tool for cloud infrastructure with cost analysis and security scanning.",
+    "fullDescription": "An interactive tool that visualizes cloud infrastructure across AWS, GCP, and Azure. It provides real-time cost analysis, security vulnerability scanning, and infrastructure-as-code generation from visual diagrams.",
+    "category": ["DevOps", "Developer Tools", "Cloud"],
+    "techStack": ["React", "D3.js", "Go", "Terraform", "AWS SDK", "Docker"],
+    "features": [
+      "Multi-cloud infrastructure visualization",
+      "Real-time cost analysis and forecasting",
+      "Security vulnerability scanning",
+      "Infrastructure-as-code generation",
+      "Drift detection and alerting",
+      "Resource dependency mapping"
+    ],
+    "status": "Archived",
+    "role": "Backend Developer",
+    "teamSize": "2",
+    "timeline": "Jan 2024 - Mar 2024",
+    "challenges": [
+      "Parsing and normalizing resources across different cloud providers",
+      "Rendering large infrastructure graphs performantly with D3.js",
+      "Accurately forecasting costs with variable pricing models"
+    ],
+    "futureImprovements": [
+      "Support for Alibaba Cloud and Oracle Cloud",
+      "AI-powered cost optimization suggestions",
+      "Real-time infrastructure change tracking"
+    ],
+    "github": "https://github.com/username/cloud-visualizer",
+    "liveDemo": "",
+    "thumbnail": "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 8
+  },
+  {
+    "id": 9,
+    "slug": "smart-home-dashboard",
+    "title": "Smart Home Dashboard",
+    "shortDescription": "Unified IoT dashboard for controlling and monitoring smart home devices with automation rules.",
+    "fullDescription": "A centralized smart home dashboard that connects and controls IoT devices from different manufacturers. Features include real-time monitoring, automation rule creation, energy consumption analytics, and voice control integration.",
+    "category": ["IoT", "Full Stack", "SaaS"],
+    "techStack": ["React", "Node.js", "MQTT", "InfluxDB", "Grafana", "Docker"],
+    "features": [
+      "Multi-protocol device integration",
+      "Visual automation rule builder",
+      "Energy consumption analytics",
+      "Voice control via Alexa and Google Home",
+      "Real-time device monitoring",
+      "Scene and schedule management"
+    ],
+    "status": "Completed",
+    "role": "Full Stack Developer",
+    "teamSize": "Solo",
+    "timeline": "Nov 2023 - Feb 2024",
+    "challenges": [
+      "Handling MQTT message throughput from hundreds of devices",
+      "Creating a universal device abstraction layer",
+      "Building a reliable automation execution engine"
+    ],
+    "futureImprovements": [
+      "Computer vision for occupancy detection",
+      "Predictive maintenance alerts",
+      "Energy optimization with AI"
+    ],
+    "github": "https://github.com/username/smart-home-dashboard",
+    "liveDemo": "https://smarthome-demo.com",
+    "thumbnail": "https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 9
+  },
+  {
+    "id": 10,
+    "slug": "code-review-automation",
+    "title": "Code Review Automation Bot",
+    "shortDescription": "AI-powered code review bot that provides intelligent suggestions and catches common issues automatically.",
+    "fullDescription": "An AI-powered GitHub bot that automates code reviews by analyzing pull requests, detecting common anti-patterns, suggesting improvements, and enforcing coding standards. Uses LLMs for contextual understanding and custom rule engines for style enforcement.",
+    "category": ["AI", "Developer Tools", "DevOps"],
+    "techStack": ["Python", "FastAPI", "OpenAI API", "GitHub API", "Redis", "Docker"],
+    "features": [
+      "Automated PR analysis and review comments",
+      "Custom rule engine for style enforcement",
+      "Security vulnerability detection",
+      "Performance issue identification",
+      "Configurable review strictness levels",
+      "Integration with CI/CD pipelines"
+    ],
+    "status": "In Progress",
+    "role": "AI Engineer",
+    "teamSize": "2",
+    "timeline": "Dec 2024 - Present",
+    "challenges": [
+      "Reducing false positives in automated reviews",
+      "Managing API rate limits for large repositories",
+      "Providing contextually relevant suggestions using LLMs"
+    ],
+    "futureImprovements": [
+      "Support for GitLab and Bitbucket",
+      "Auto-fix suggestions with one-click apply",
+      "Team-specific review patterns learning"
+    ],
+    "github": "https://github.com/username/code-review-bot",
+    "liveDemo": "",
+    "thumbnail": "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": true,
+    "order": 10
+  },
+  {
+    "id": 11,
+    "slug": "personal-finance-app",
+    "title": "FinTrack - Personal Finance App",
+    "shortDescription": "Smart personal finance manager with budget tracking, investment portfolio, and financial goal planning.",
+    "fullDescription": "A comprehensive personal finance application that helps users track expenses, manage budgets, monitor investment portfolios, and plan financial goals. Features bank account integration, AI-powered spending insights, and bill reminders.",
+    "category": ["Fintech", "SaaS", "Full Stack"],
+    "techStack": ["React", "TypeScript", "Node.js", "PostgreSQL", "Plaid API", "Chart.js"],
+    "features": [
+      "Bank account integration via Plaid",
+      "AI-powered spending categorization",
+      "Investment portfolio tracking",
+      "Budget planning with alerts",
+      "Bill reminders and scheduling",
+      "Financial goal progress tracking"
+    ],
+    "status": "Completed",
+    "role": "Full Stack Developer",
+    "teamSize": "3",
+    "timeline": "Jul 2024 - Oct 2024",
+    "challenges": [
+      "Securely handling sensitive financial data",
+      "Building reliable bank API integrations",
+      "Creating accurate spending categorization with limited data"
+    ],
+    "futureImprovements": [
+      "Tax filing assistance",
+      "Cryptocurrency portfolio tracking",
+      "Family budget sharing"
+    ],
+    "github": "https://github.com/username/fintrack",
+    "liveDemo": "https://fintrack-demo.com",
+    "thumbnail": "https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 11
+  },
+  {
+    "id": 12,
+    "slug": "api-gateway-service",
+    "title": "API Gateway Service",
+    "shortDescription": "High-performance API gateway with rate limiting, caching, and request transformation capabilities.",
+    "fullDescription": "A lightweight, high-performance API gateway built in Go that provides rate limiting, response caching, request/response transformation, authentication, and load balancing. Designed for microservices architectures requiring a unified entry point.",
+    "category": ["DevOps", "Backend", "Cloud"],
+    "techStack": ["Go", "Redis", "Docker", "Kubernetes", "Prometheus", "Grafana"],
+    "features": [
+      "Configurable rate limiting per route",
+      "Response caching with TTL management",
+      "Request/response transformation pipeline",
+      "JWT and API key authentication",
+      "Load balancing with health checks",
+      "Prometheus metrics and Grafana dashboards"
+    ],
+    "status": "Completed",
+    "role": "Backend Engineer",
+    "teamSize": "Solo",
+    "timeline": "Aug 2023 - Nov 2023",
+    "challenges": [
+      "Achieving sub-millisecond routing performance",
+      "Implementing distributed rate limiting across instances",
+      "Handling graceful degradation when downstream services fail"
+    ],
+    "futureImprovements": [
+      "GraphQL federation support",
+      "Websocket proxying",
+      "Service mesh integration"
+    ],
+    "github": "https://github.com/username/api-gateway",
+    "liveDemo": "",
+    "thumbnail": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 12
+  }
+]

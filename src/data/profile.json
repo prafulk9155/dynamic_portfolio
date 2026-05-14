@@ -1,0 +1,79 @@
+{
+  "name": "Alex Chen",
+  "title": "Full Stack Developer & AI Engineer",
+  "tagline": "Building intelligent software that solves real problems",
+  "bio": "I'm a passionate full-stack developer with 5+ years of experience building scalable web applications, AI-powered platforms, and developer tools. I love turning complex problems into elegant, user-friendly solutions.",
+  "location": "San Francisco, CA",
+  "email": "alex@example.com",
+  "avatar": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400",
+  "social": {
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username",
+    "twitter": "https://twitter.com/username"
+  },
+  "stats": {
+    "projectsCompleted": 12,
+    "yearsExperience": 5,
+    "clientsWorkedWith": 8,
+    "openSourceContributions": 45
+  },
+  "skills": [
+    { "category": "Frontend", "items": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"] },
+    { "category": "Backend", "items": ["Node.js", "Go", "Python", "FastAPI", "GraphQL"] },
+    { "category": "Database", "items": ["PostgreSQL", "MongoDB", "Redis", "InfluxDB"] },
+    { "category": "Cloud & DevOps", "items": ["AWS", "Docker", "Kubernetes", "Terraform", "CI/CD"] },
+    { "category": "AI/ML", "items": ["TensorFlow", "PyTorch", "OpenAI API", "Stable Diffusion"] },
+    { "category": "Tools", "items": ["Git", "Figma", "Linux", "Vim"] }
+  ],
+  "experience": [
+    {
+      "role": "Senior Full Stack Developer",
+      "company": "TechCorp Inc.",
+      "period": "2023 - Present",
+      "description": "Leading development of AI-powered SaaS products, managing a team of 5 engineers, and architecting scalable microservices."
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "StartupXYZ",
+      "period": "2021 - 2023",
+      "description": "Built and shipped 4 production applications including an e-commerce platform and a real-time collaboration tool."
+    },
+    {
+      "role": "Junior Developer",
+      "company": "DevAgency Co.",
+      "period": "2019 - 2021",
+      "description": "Developed client web applications, learned modern frontend frameworks, and contributed to open-source projects."
+    }
+  ],
+  "services": [
+    {
+      "title": "Full Stack Development",
+      "description": "End-to-end web application development from design to deployment",
+      "icon": "code"
+    },
+    {
+      "title": "AI/ML Integration",
+      "description": "Integrating AI capabilities into existing products and building ML-powered features",
+      "icon": "brain"
+    },
+    {
+      "title": "Cloud Architecture",
+      "description": "Designing and implementing scalable cloud infrastructure on AWS, GCP, and Azure",
+      "icon": "cloud"
+    },
+    {
+      "title": "DevOps & CI/CD",
+      "description": "Setting up automated deployment pipelines, monitoring, and infrastructure as code",
+      "icon": "git-branch"
+    }
+  ],
+  "journey": [
+    { "year": "2019", "event": "Started career as a Junior Developer at DevAgency Co." },
+    { "year": "2020", "event": "First open-source contribution and built first SaaS product" },
+    { "year": "2021", "event": "Joined StartupXYZ as Full Stack Developer" },
+    { "year": "2022", "event": "Shipped 4 production applications and led frontend team" },
+    { "year": "2023", "event": "Promoted to Senior Developer at TechCorp Inc." },
+    { "year": "2024", "event": "Started exploring AI/ML and built AI-powered tools" },
+    { "year": "2025", "event": "Leading AI platform development and mentoring junior developers" }
+  ]
+}

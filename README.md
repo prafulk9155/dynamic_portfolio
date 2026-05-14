@@ -1,2 +1,3 @@
-# dynamic_portfolio
-dynamic portfolio as all data from json 
+# platform
+
+[![Open in Bolt](https://bolt.new/static/open-in-bolt.svg)](https://bolt.new/~/sb1-dkh1swdv)
