@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, MapPin, Send, Github, Linkedin, Twitter, Phone } from 'lucide-react';
 import Button from '../components/ui/Button';
 import Input from '../components/ui/Input';
 import SectionHeading from '../components/ui/SectionHeading';
@@ -44,6 +44,17 @@ export default function ContactPage() {
                       <a href={`mailto:${profile.email}`} className="text-sm text-slate-300 hover:text-teal-400">{profile.email}</a>
                     </div>
                   </div>
+                  {'phone' in profile && (
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-500/10 text-teal-400">
+                        <Phone className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <div className="text-xs text-slate-500">Phone</div>
+                        <a href={`tel:${(profile as any).phone}`} className="text-sm text-slate-300 hover:text-teal-400">{(profile as any).phone}</a>
+                      </div>
+                    </div>
+                  )}
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-500/10 text-teal-400">
                       <MapPin className="h-5 w-5" />
