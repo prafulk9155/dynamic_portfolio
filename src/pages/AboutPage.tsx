@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Code2, Brain, Cloud, GitBranch, MapPin, Mail, Calendar } from 'lucide-react';
+import { Code2, Brain, Cloud, GitBranch, Server, Database, MapPin, Mail, Calendar, Phone, ExternalLink } from 'lucide-react';
 import SectionHeading from '../components/ui/SectionHeading';
 import profile from '../data/profile.json';
 import { ANIMATION_VARIANTS } from '../utils/constants';
@@ -9,6 +9,8 @@ const serviceIcons: Record<string, React.ElementType> = {
   brain: Brain,
   cloud: Cloud,
   'git-branch': GitBranch,
+  server: Server,
+  database: Database,
 };
 
 export default function AboutPage() {
@@ -41,8 +43,20 @@ export default function AboutPage() {
                     <MapPin className="h-4 w-4 text-slate-500" /> {profile.location}
                   </div>
                   <div className="flex items-center gap-2 text-sm text-slate-400">
-                    <Mail className="h-4 w-4 text-slate-500" /> {profile.email}
+                    <Mail className="h-4 w-4 text-slate-500" />
+                    <a href={`mailto:${profile.email}`} className="hover:text-teal-400 transition-colors">{profile.email}</a>
                   </div>
+                  {'phone' in profile && (
+                    <div className="flex items-center gap-2 text-sm text-slate-400">
+                      <Phone className="h-4 w-4 text-slate-500" /> {(profile as any).phone}
+                    </div>
+                  )}
+                  {'website' in profile && (
+                    <div className="flex items-center gap-2 text-sm text-slate-400">
+                      <ExternalLink className="h-4 w-4 text-slate-500" />
+                      <a href={(profile as any).website} target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors truncate">{(profile as any).website}</a>
+                    </div>
+                  )}
                 </div>
                 <p className="mt-4 text-sm leading-relaxed text-slate-500">{profile.bio}</p>
               </div>

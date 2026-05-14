@@ -11,7 +11,7 @@ interface LayoutProps {
 
 export default function Layout({ theme, toggleTheme }: LayoutProps) {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-200">
+    <div className="min-h-screen bg-theme-base text-theme-primary transition-colors duration-300">
       <ScrollProgress />
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main className="pt-16">

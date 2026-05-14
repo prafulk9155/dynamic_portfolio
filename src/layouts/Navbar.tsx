@@ -1,14 +1,19 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sun, Moon, Code2 } from 'lucide-react';
+import { Menu, X, Sun, Moon, Download, Braces } from 'lucide-react';
 import { NAV_LINKS } from '../utils/constants';
 import { cn } from '../utils/helpers';
+import profile from '../data/profile.json';
 
 interface NavbarProps {
   theme: 'dark' | 'light';
   toggleTheme: () => void;
 }
+
+const firstName = profile.name.split(' ')[0];
+const lastName = profile.name.split(' ')[1];
+const resumeUrl = 'resumeUrl' in profile ? (profile as any).resumeUrl : null;
 
 export default function Navbar({ theme, toggleTheme }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,79 +34,150 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
     <>
       <nav
         className={cn(
-          'fixed top-0 left-0 right-0 z-40 transition-all duration-300',
+          'fixed top-0 left-0 right-0 z-40 transition-all duration-500',
           scrolled
-            ? 'border-b border-slate-700/50 bg-slate-900/80 backdrop-blur-xl'
+            ? 'border-b border-slate-700/40 bg-slate-900/85 shadow-xl shadow-slate-900/20 backdrop-blur-2xl'
             : 'bg-transparent'
         )}
       >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link to="/" className="flex items-center gap-2 text-slate-100">
-            <Code2 className="h-6 w-6 text-teal-500" />
-            <span className="text-lg font-bold tracking-tight">Alex Chen</span>
+
+          {/* Logo / Brand */}
+          <Link to="/" className="group flex items-center gap-2.5">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-500/15 ring-1 ring-teal-500/30 transition-all group-hover:bg-teal-500/25 group-hover:ring-teal-400/50">
+              <Braces className="h-4 w-4 text-teal-400" />
+            </div>
+            <div className="flex items-baseline gap-1 text-lg font-bold tracking-tight">
+              <span className="text-slate-100 transition-colors group-hover:text-white">{firstName}</span>
+              <span className="text-teal-400">{lastName}</span>
+            </div>
           </Link>
 
-          <div className="hidden items-center gap-1 md:flex">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={cn(
-                  'rounded-lg px-3 py-2 text-sm font-medium transition-colors',
-                  location.pathname === link.path
-                    ? 'text-teal-400'
-                    : 'text-slate-400 hover:text-slate-200'
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
+          {/* Desktop nav links */}
+          <div className="hidden items-center gap-0.5 md:flex">
+            {NAV_LINKS.map((link) => {
+              const isActive = location.pathname === link.path;
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={cn(
+                    'relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors',
+                    isActive ? 'text-teal-400' : 'text-slate-400 hover:text-slate-100'
+                  )}
+                >
+                  {link.label}
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-active-pill"
+                      className="absolute inset-0 rounded-lg bg-teal-500/10 ring-1 ring-teal-500/20"
+                      transition={{ type: 'spring', stiffness: 380, damping: 32 }}
+                    />
+                  )}
+                </Link>
+              );
+            })}
           </div>
 
+          {/* Right actions */}
           <div className="flex items-center gap-2">
+            {resumeUrl && (
+              <a
+                href={resumeUrl}
+                download="Praful_Kumar_Resume.pdf"
+                className="hidden items-center gap-1.5 rounded-lg border border-teal-500/40 bg-teal-500/10 px-3.5 py-1.5 text-sm font-medium text-teal-400 transition-all hover:bg-teal-500/20 hover:border-teal-400/60 hover:shadow-md hover:shadow-teal-500/10 md:flex"
+                aria-label="Download Resume"
+              >
+                <Download className="h-3.5 w-3.5" />
+                Resume
+              </a>
+            )}
+
             <button
               onClick={toggleTheme}
-              className="rounded-lg p-2 text-slate-400 transition-colors hover:bg-slate-800 hover:text-slate-200"
+              className="rounded-lg p-2 text-slate-400 transition-all hover:bg-slate-800 hover:text-slate-100"
               aria-label="Toggle theme"
             >
-              {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={theme}
+                  initial={{ rotate: -90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="flex"
+                >
+                  {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+                </motion.span>
+              </AnimatePresence>
             </button>
 
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="rounded-lg p-2 text-slate-400 transition-colors hover:bg-slate-800 hover:text-slate-200 md:hidden"
+              className="rounded-lg p-2 text-slate-400 transition-all hover:bg-slate-800 hover:text-slate-100 md:hidden"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={isOpen ? 'close' : 'open'}
+                  initial={{ rotate: -90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 90, opacity: 0 }}
+                  transition={{ duration: 0.15 }}
+                  className="flex"
+                >
+                  {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                </motion.span>
+              </AnimatePresence>
             </button>
           </div>
         </div>
       </nav>
 
+      {/* Mobile menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="fixed inset-x-0 top-16 z-30 border-b border-slate-700/50 bg-slate-900/95 backdrop-blur-xl md:hidden"
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-x-0 top-16 z-30 border-b border-slate-700/50 bg-slate-900/97 backdrop-blur-2xl md:hidden"
           >
-            <div className="space-y-1 px-4 py-4">
+            {/* Role badge */}
+            <div className="border-b border-slate-800/60 px-4 py-3">
+              <p className="text-xs text-slate-500">{profile.title.split('|')[0].trim()}</p>
+            </div>
+
+            <div className="space-y-1 px-4 py-3">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
                   className={cn(
-                    'block rounded-lg px-3 py-2.5 text-sm font-medium transition-colors',
+                    'flex items-center rounded-lg px-3 py-2.5 text-sm font-medium transition-colors',
                     location.pathname === link.path
-                      ? 'bg-teal-500/10 text-teal-400'
-                      : 'text-slate-400 hover:bg-slate-800 hover:text-slate-200'
+                      ? 'bg-teal-500/10 text-teal-400 ring-1 ring-teal-500/20'
+                      : 'text-slate-400 hover:bg-slate-800/60 hover:text-slate-100'
                   )}
                 >
                   {link.label}
                 </Link>
               ))}
             </div>
+
+            {resumeUrl && (
+              <div className="border-t border-slate-800/60 px-4 py-3">
+                <a
+                  href={resumeUrl}
+                  download="Praful_Kumar_Resume.pdf"
+                  className="flex items-center justify-center gap-2 rounded-lg border border-teal-500/30 bg-teal-500/10 px-3 py-2.5 text-sm font-medium text-teal-400 transition-colors hover:bg-teal-500/20"
+                >
+                  <Download className="h-4 w-4" />
+                  Download Resume
+                </a>
+              </div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>

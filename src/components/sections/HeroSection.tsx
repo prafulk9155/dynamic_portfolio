@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Button from '../ui/Button';
 import profile from '../../data/profile.json';
@@ -44,6 +44,16 @@ export default function HeroSection() {
               <Link to="/contact">
                 <Button variant="outline" size="lg">Get in Touch</Button>
               </Link>
+              {'resumeUrl' in profile && (profile as any).resumeUrl && (
+                <a
+                  href={(profile as any).resumeUrl}
+                  download="Praful_Kumar_Resume.pdf"
+                  className="inline-flex items-center gap-2 rounded-xl border border-slate-600/50 bg-slate-800/50 px-5 py-2.5 text-base font-medium text-slate-300 backdrop-blur-sm transition-all hover:border-teal-500/40 hover:bg-slate-700/50 hover:text-teal-400"
+                >
+                  <Download className="h-4 w-4" />
+                  Download Resume
+                </a>
+              )}
             </div>
 
             <div className="mt-6 flex gap-3">
