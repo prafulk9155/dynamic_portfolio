@@ -5,29 +5,39 @@
 @layer base {
   /* ─── CSS Variables — Dark (default) ─── */
   :root, html.dark {
-    --bg-base:      #020617;   /* slate-950 */
-    --bg-surface:   #0f172a;   /* slate-900 */
-    --bg-card:      #1e293b;   /* slate-800 */
-    --bg-muted:     #334155;   /* slate-700 */
-    --text-primary: #e2e8f0;   /* slate-200 */
-    --text-muted:   #94a3b8;   /* slate-400 */
-    --text-faint:   #475569;   /* slate-600 */
-    --border:       rgba(51,65,85,0.5); /* slate-700/50 */
+    --bg-base:      #020617;
+    --bg-surface:   #0f172a;
+    --bg-card:      #1e293b;
+    --bg-muted:     #334155;
+    --text-primary: #e2e8f0;
+    --text-muted:   #94a3b8;
+    --text-faint:   #475569;
+    --border-color: rgba(51,65,85,0.5);
+    --card-bg:      rgba(30,41,59,0.8);
+    --card-border:  rgba(51,65,85,0.5);
+    --badge-bg:     rgba(30,41,59,0.7);
+    --badge-border: rgba(51,65,85,0.5);
+    --badge-text:   #94a3b8;
     --scrollbar-bg: #0f172a;
     --scrollbar-thumb: #334155;
-    --scrollbar-hover:  #475569;
+    --scrollbar-hover: #475569;
   }
 
   /* ─── CSS Variables — Light ─── */
   html.light {
-    --bg-base:      #f8fafc;   /* slate-50 */
-    --bg-surface:   #f1f5f9;   /* slate-100 */
-    --bg-card:      #e2e8f0;   /* slate-200 */
-    --bg-muted:     #cbd5e1;   /* slate-300 */
-    --text-primary: #0f172a;   /* slate-900 */
-    --text-muted:   #475569;   /* slate-600 */
-    --text-faint:   #94a3b8;   /* slate-400 */
-    --border:       rgba(148,163,184,0.4);
+    --bg-base:      #f8fafc;
+    --bg-surface:   #f1f5f9;
+    --bg-card:      #e2e8f0;
+    --bg-muted:     #cbd5e1;
+    --text-primary: #0f172a;
+    --text-muted:   #475569;
+    --text-faint:   #94a3b8;
+    --border-color: rgba(148,163,184,0.35);
+    --card-bg:      rgba(241,245,249,0.9);
+    --card-border:  rgba(148,163,184,0.35);
+    --badge-bg:     rgba(226,232,240,0.8);
+    --badge-border: rgba(148,163,184,0.4);
+    --badge-text:   #475569;
     --scrollbar-bg: #f1f5f9;
     --scrollbar-thumb: #cbd5e1;
     --scrollbar-hover: #94a3b8;
@@ -45,45 +55,59 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  ::selection {
-    @apply bg-teal-500/30 text-white;
-  }
+  ::selection { @apply bg-teal-500/30 text-white; }
 
   ::-webkit-scrollbar { width: 8px; }
   ::-webkit-scrollbar-track { background: var(--scrollbar-bg); }
-  ::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb);
-    border-radius: 9999px;
-  }
+  ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 9999px; }
   ::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-hover); }
 }
 
 @layer components {
-  /* ─── Theme-aware utilities ─── */
+  /* ─── Theme-aware base utilities ─── */
   .bg-theme-base    { background-color: var(--bg-base); }
   .bg-theme-surface { background-color: var(--bg-surface); }
   .bg-theme-card    { background-color: var(--bg-card); }
   .text-theme-primary { color: var(--text-primary); }
   .text-theme-muted   { color: var(--text-muted); }
-  .border-theme       { border-color: var(--border); }
+  .border-theme       { border-color: var(--border-color); }
 
   .glass {
-    border: 1px solid var(--border);
-    background-color: color-mix(in srgb, var(--bg-card) 50%, transparent);
+    border: 1px solid var(--card-border);
+    background-color: var(--card-bg);
     backdrop-filter: blur(8px);
   }
 
-  /* ─── Light-mode Tailwind overrides ─── */
-  html.light .bg-slate-950 { background-color: var(--bg-base) !important; }
-  html.light .bg-slate-900 { background-color: var(--bg-surface) !important; }
-  html.light .bg-slate-900\/50 { background-color: color-mix(in srgb, var(--bg-surface) 50%, transparent) !important; }
-  html.light .bg-slate-900\/80 { background-color: color-mix(in srgb, var(--bg-surface) 80%, transparent) !important; }
-  html.light .bg-slate-900\/95 { background-color: color-mix(in srgb, var(--bg-surface) 95%, transparent) !important; }
-  html.light .bg-slate-800 { background-color: var(--bg-card) !important; }
-  html.light .bg-slate-800\/50 { background-color: color-mix(in srgb, var(--bg-card) 50%, transparent) !important; }
-  html.light .bg-slate-800\/30 { background-color: color-mix(in srgb, var(--bg-card) 30%, transparent) !important; }
-  html.light .bg-slate-700\/50 { background-color: color-mix(in srgb, var(--bg-muted) 50%, transparent) !important; }
+  /* ═══════════════════════════════════════════
+     LIGHT MODE OVERRIDES
+  ═══════════════════════════════════════════ */
 
+  /* ── Backgrounds ── */
+  html.light .bg-slate-950 { background-color: var(--bg-base) !important; }
+
+  html.light .bg-slate-900,
+  html.light .bg-slate-900\/30,
+  html.light .bg-slate-900\/50,
+  html.light .bg-slate-900\/80,
+  html.light .bg-slate-900\/95 {
+    background-color: var(--bg-surface) !important;
+  }
+
+  html.light .bg-slate-800,
+  html.light .bg-slate-800\/30,
+  html.light .bg-slate-800\/50,
+  html.light .bg-slate-800\/70 {
+    background-color: var(--bg-card) !important;
+  }
+
+  html.light .bg-slate-700\/50 { background-color: rgba(203,213,225,0.5) !important; }
+
+  /* ── CTA card gradient ── */
+  html.light .bg-gradient-to-br.from-slate-800\/80 {
+    background: linear-gradient(to bottom right, rgba(241,245,249,0.95), rgba(226,232,240,0.95)) !important;
+  }
+
+  /* ── Text ── */
   html.light .text-slate-100 { color: #0f172a !important; }
   html.light .text-slate-200 { color: #1e293b !important; }
   html.light .text-slate-300 { color: #334155 !important; }
@@ -91,14 +115,33 @@
   html.light .text-slate-500 { color: #64748b !important; }
   html.light .text-slate-600 { color: #94a3b8 !important; }
 
-  html.light .border-slate-800 { border-color: rgba(148,163,184,0.3) !important; }
-  html.light .border-slate-700 { border-color: rgba(148,163,184,0.4) !important; }
-  html.light .border-slate-700\/50 { border-color: rgba(148,163,184,0.3) !important; }
+  /* ── Borders ── */
+  html.light .border-slate-800,
+  html.light .border-slate-800\/60 { border-color: rgba(148,163,184,0.25) !important; }
+  html.light .border-slate-700,
+  html.light .border-slate-700\/50,
+  html.light .border-slate-700\/40,
+  html.light .border-slate-700\/30 { border-color: rgba(148,163,184,0.35) !important; }
 
-  html.light nav.border-b { border-color: rgba(148,163,184,0.25) !important; }
+  /* ── Cards / sections ── */
+  html.light section.border-t { border-color: rgba(148,163,184,0.25) !important; }
 
+  /* ── Footer ── */
   html.light footer {
     background-color: var(--bg-surface) !important;
     border-color: rgba(148,163,184,0.25) !important;
   }
+
+  /* ── Tech badges (footer + any badge) ── */
+  html.light .ring-slate-700\/50 { --tw-ring-color: rgba(148,163,184,0.4) !important; }
+
+  /* ── Cards with backdrop ── */
+  html.light .backdrop-blur-sm,
+  html.light .backdrop-blur-xl,
+  html.light .backdrop-blur-2xl { backdrop-filter: blur(16px); }
+
+  /* ── Hover states ── */
+  html.light .hover\:bg-slate-800:hover { background-color: var(--bg-card) !important; }
+  html.light .hover\:text-slate-200:hover { color: #1e293b !important; }
+  html.light .hover\:bg-slate-800\/60:hover { background-color: rgba(226,232,240,0.6) !important; }
 }
