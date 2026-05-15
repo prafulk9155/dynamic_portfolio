@@ -4,7 +4,7 @@
     "slug": "task-management-application",
     "title": "Task Management Application",
     "shortDescription": "Full-stack task management platform with real-time tracking, role-based access control, and interactive productivity dashboards.",
-    "fullDescription": "A comprehensive full-stack task management platform built with React, Node.js, Express, and MongoDB. Enables real-time task tracking and team collaboration with a clean, intuitive interface. Features role-based access control (RBAC) to manage multi-user workflows securely, and interactive dashboards powered by Chart.js for visualizing team productivity, task completion rates, and workload distribution.",
+    "fullDescription": "A comprehensive full-stack task management platform built with React, Node.js, Express, and MongoDB. Enables real-time task tracking and team collaboration. Features role-based access control (RBAC) for multi-user workflows and interactive dashboards powered by Chart.js for visualizing team productivity, task completion rates, and workload distribution.",
     "category": ["Full Stack", "Productivity", "SaaS"],
     "techStack": ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Chart.js", "JWT"],
     "features": [
@@ -12,8 +12,7 @@
       "Role-based access control (RBAC) for multi-user workflows",
       "Secure REST APIs with JWT authentication",
       "Interactive productivity dashboards with Chart.js",
-      "Task completion rate and workload distribution charts",
-      "Sprint-style task management"
+      "Task completion rate and workload distribution analytics"
     ],
     "status": "In Progress",
     "role": "Full Stack Developer",
@@ -21,30 +20,53 @@
     "timeline": "Jan 2025 – Present",
     "challenges": [
       "Designing a flexible RBAC system that scales across multiple team structures",
-      "Building performant real-time dashboards with complex aggregations",
-      "Optimizing MongoDB queries for large task datasets"
+      "Building performant real-time dashboards with complex aggregations"
     ],
-    "futureImprovements": [
-      "WebSocket-based real-time notifications",
-      "Gantt chart and calendar view",
-      "Mobile app with React Native"
-    ],
+    "futureImprovements": ["WebSocket real-time notifications", "Gantt chart view", "Mobile app"],
     "github": "https://github.com/prafulk9155",
     "liveDemo": "https://prafulstack.netlify.app",
     "thumbnail": "https://images.pexels.com/photos/3785704/pexels-photo-3785704.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "screenshots": [
-      "https://images.pexels.com/photos/3785704/pexels-photo-3785704.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1200"
-    ],
+    "screenshots": ["https://images.pexels.com/photos/3785704/pexels-photo-3785704.jpeg?auto=compress&cs=tinysrgb&w=1200"],
     "featured": true,
     "order": 1
   },
   {
     "id": 2,
+    "slug": "dynamic-portfolio",
+    "title": "Dynamic Portfolio",
+    "shortDescription": "A fully dynamic developer portfolio where all content is driven from JSON data files — no hardcoding required.",
+    "fullDescription": "A modern, fully dynamic portfolio website where all profile, experience, skills, and project data is loaded from JSON configuration files. Built with React, TypeScript, and Tailwind CSS. Features dark/light theme switching, smooth Framer Motion animations, responsive layouts, and a clean project showcase with filtering. Deployed on Netlify.",
+    "category": ["Full Stack", "Frontend", "Open Source"],
+    "techStack": ["React", "TypeScript", "Tailwind CSS", "Vite", "Framer Motion"],
+    "features": [
+      "All data driven from JSON — zero hardcoded content",
+      "Dark/light theme with smooth transitions",
+      "Framer Motion page and component animations",
+      "Projects page with category filtering",
+      "Resume download and social links"
+    ],
+    "status": "In Progress",
+    "role": "Full Stack Developer",
+    "teamSize": "Solo",
+    "timeline": "Aug 2024 – Present",
+    "challenges": [
+      "Building a fully data-driven architecture with TypeScript type safety",
+      "Implementing a robust dark/light theme system with CSS variables"
+    ],
+    "futureImprovements": ["CMS integration", "Blog section", "Analytics dashboard"],
+    "github": "https://github.com/prafulk9155/dynamic_portfolio",
+    "liveDemo": "https://prafulstack.netlify.app",
+    "thumbnail": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": ["https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200"],
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": 3,
     "slug": "heavy-vehicle-management-system",
     "title": "Heavy Vehicle Management System",
     "shortDescription": "Full-stack logistics platform with real-time vehicle tracking, load request management, route optimization, and a mobile app for drivers.",
-    "fullDescription": "A complete logistics management platform designed for tracking heavy vehicles in real time. Built with Angular for the web dashboard and Angular Native for mobile, enabling drivers and managers to access tracking and logistics features on the go. The FastAPI backend with MySQL handles transactional data efficiently, while third-party GPS APIs power live location updates. Features include load request management, route optimization, and a mobile-first experience for field operations.",
+    "fullDescription": "A complete logistics management platform designed for tracking heavy vehicles in real time. Built with Angular for the web dashboard and Angular Native for mobile, enabling drivers and managers to access tracking and logistics features on the go. The FastAPI backend with MySQL handles transactional data efficiently, while third-party GPS APIs power live location updates.",
     "category": ["Full Stack", "Logistics", "Mobile"],
     "techStack": ["Angular", "FastAPI", "MySQL", "Angular Native", "GPS APIs", "Python"],
     "features": [
@@ -52,8 +74,7 @@
       "Load request management and route optimization",
       "Mobile application for drivers and managers",
       "Transactional data management with MySQL",
-      "Role-based dashboard for fleet managers",
-      "Live location updates and trip history"
+      "Role-based dashboard for fleet managers"
     ],
     "status": "Completed",
     "role": "Full Stack Developer",
@@ -61,38 +82,30 @@
     "timeline": "May 2024 – Aug 2024",
     "challenges": [
       "Integrating third-party GPS APIs for reliable real-time tracking",
-      "Building a performant mobile app with Angular Native for logistics use cases",
-      "Designing MySQL schemas for complex transactional logistics data"
+      "Building a performant mobile app with Angular Native"
     ],
-    "futureImprovements": [
-      "AI-powered route optimization",
-      "Fuel consumption analytics",
-      "Driver performance scoring"
-    ],
+    "futureImprovements": ["AI-powered route optimization", "Fuel consumption analytics"],
     "github": "https://github.com/prafulk9155",
     "liveDemo": "",
     "thumbnail": "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "screenshots": [
-      "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1200"
-    ],
+    "screenshots": ["https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1200"],
     "featured": true,
-    "order": 2
+    "order": 3
   },
   {
-    "id": 3,
+    "id": 4,
     "slug": "data-analytics-visualization-platform",
     "title": "Data Analytics & Visualization Platform",
     "shortDescription": "Full-stack analytics platform with interactive public dashboards, real-time charts, custom filters, and automated CI/CD deployment.",
-    "fullDescription": "A comprehensive data analytics and visualization platform built with Angular and FastAPI. Features an interactive public dashboard with real-time charts built using ApexCharts, Chart.js, and ECharts. Organizations can securely input data which is instantly reflected on the public visualization dashboard with live data refresh. Deployed on Apache with automated CI/CD pipelines, ensuring high availability and zero-downtime cloud deployments.",
+    "fullDescription": "A comprehensive data analytics and visualization platform built with Angular and FastAPI. Features an interactive public dashboard with real-time charts built using ApexCharts, Chart.js, and ECharts. Organizations can securely input data which is instantly reflected on the public visualization dashboard. Deployed on Apache with automated CI/CD pipelines.",
     "category": ["Full Stack", "Analytics", "Data Visualization"],
-    "techStack": ["Angular", "FastAPI", "MySQL", "ApexCharts", "Chart.js", "ECharts", "Apache", "CI/CD", "Python"],
+    "techStack": ["Angular", "FastAPI", "MySQL", "ApexCharts", "Chart.js", "ECharts", "Apache", "CI/CD"],
     "features": [
       "Interactive public dashboard with real-time charts",
       "Custom filters and data export capabilities",
       "Secure organizational data input with live visualization",
-      "Real-time data refresh and live updates",
-      "Multiple chart types: ApexCharts, Chart.js, ECharts",
-      "Automated CI/CD deployment on Apache for zero downtime"
+      "Multiple chart libraries: ApexCharts, Chart.js, ECharts",
+      "Automated CI/CD deployment on Apache"
     ],
     "status": "Completed",
     "role": "Full Stack Developer",
@@ -100,137 +113,262 @@
     "timeline": "Dec 2023 – Apr 2024",
     "challenges": [
       "Ensuring real-time data sync between input forms and public dashboards",
-      "Combining multiple charting libraries (ApexCharts, Chart.js, ECharts) into a unified UX",
       "Setting up zero-downtime CI/CD deployments on Apache"
     ],
-    "futureImprovements": [
-      "Predictive analytics with ML models",
-      "Scheduled data reports via email",
-      "Multi-tenant organizational dashboards"
-    ],
+    "futureImprovements": ["Predictive analytics with ML models", "Scheduled data reports"],
     "github": "https://github.com/prafulk9155",
     "liveDemo": "",
     "thumbnail": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "screenshots": [
-      "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "https://images.pexels.com/photos/669621/pexels-photo-669621.jpeg?auto=compress&cs=tinysrgb&w=1200"
-    ],
-    "featured": true,
-    "order": 3
-  },
-  {
-    "id": 4,
-    "slug": "enterprise-mern-applications",
-    "title": "Enterprise MERN & Angular Applications",
-    "shortDescription": "Delivered 7+ full-stack enterprise web applications using MERN stack and Angular for multiple clients at Oges Solutions.",
-    "fullDescription": "Over the course of my tenure at Oges Solutions, I designed and delivered 7+ full-stack web applications for various enterprise clients. These applications were built using the MERN stack (MongoDB, Express.js, React, Node.js) and Angular, covering diverse domains including business management, reporting systems, and client portals. Each application featured secure JWT authentication, optimized MySQL/MongoDB databases, AWS cloud deployments, and automated CI/CD pipelines.",
-    "category": ["Full Stack", "Enterprise", "MERN Stack"],
-    "techStack": ["React", "Angular", "Node.js", "Express.js", "MongoDB", "MySQL", "AWS EC2", "AWS S3", "JWT", "Docker"],
-    "features": [
-      "7+ production-grade full-stack applications",
-      "Secure JWT authentication and authorization",
-      "AWS (EC2, S3) cloud deployments with performance optimization",
-      "Optimized MySQL and MongoDB databases with indexing strategies",
-      "CI/CD pipeline integration for automated deployments",
-      "Responsive, accessible UI across all platforms"
-    ],
-    "status": "Completed",
-    "role": "Full Stack Developer (Project Engineer III)",
-    "teamSize": "5",
-    "timeline": "Aug 2023 – Mar 2025",
-    "challenges": [
-      "Managing multiple concurrent client projects with different tech requirements",
-      "Ensuring security best practices across varied production environments",
-      "Optimizing database queries for high-traffic enterprise applications"
-    ],
-    "futureImprovements": [
-      "Migrating legacy systems to microservices",
-      "Introducing real-time features with WebSockets",
-      "Enhanced analytics dashboards for clients"
-    ],
-    "github": "https://github.com/prafulk9155",
-    "liveDemo": "https://prafulstack.netlify.app",
-    "thumbnail": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "screenshots": [
-      "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200"
-    ],
+    "screenshots": ["https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1200"],
     "featured": true,
     "order": 4
   },
   {
     "id": 5,
-    "slug": "elasticsearch-search-system",
-    "title": "Elasticsearch Full-Text Search System",
-    "shortDescription": "Scalable, high-speed full-text search system built with Elasticsearch, enabling fast querying across large datasets at Taxmann Technologies.",
-    "fullDescription": "Designed and implemented an Elasticsearch-based full-text search system for enterprise products at Taxmann Technologies. The system enables scalable, high-speed querying across large datasets, dramatically reducing search response times. The implementation included index design, query optimization, and integration with the existing Node.js and FastAPI backends, supporting complex data workflows across multiple product integrations.",
-    "category": ["Backend", "Search", "Enterprise"],
-    "techStack": ["Elasticsearch", "Node.js", "FastAPI", "Python", "MongoDB", "MySQL", "Angular", "React"],
+    "slug": "blog-platform",
+    "title": "Full-Stack Blog Platform",
+    "shortDescription": "Complete blogging platform with a React/JavaScript frontend and Node.js/Express backend, deployed on Vercel.",
+    "fullDescription": "A full-stack blogging application split into a dedicated frontend and backend. The backend (blogging-backend) is a RESTful API built with Node.js and Express, deployed on Vercel. The frontend (blog-frontend) is a JavaScript React app with full CRUD capabilities for blog posts, user authentication, and a clean reading experience.",
+    "category": ["Full Stack", "Blog", "MERN Stack"],
+    "techStack": ["React", "Node.js", "Express.js", "JavaScript", "MongoDB", "REST API", "Vercel"],
     "features": [
-      "Full-text search across large enterprise datasets",
-      "Optimized Elasticsearch index design and query tuning",
-      "Scalable search supporting complex data workflows",
-      "Significant reduction in search response times",
-      "Integration with Node.js and FastAPI backends",
-      "Support for multiple product integrations"
+      "Full CRUD blog post management",
+      "RESTful API backend with Express.js",
+      "User authentication and authorization",
+      "Clean, responsive reading interface",
+      "Deployed on Vercel for both frontend and backend"
     ],
-    "status": "In Progress",
+    "status": "Completed",
     "role": "Full Stack Developer",
-    "teamSize": "4",
-    "timeline": "March 2025 – Present",
+    "teamSize": "Solo",
+    "timeline": "Dec 2024 – Jan 2025",
     "challenges": [
-      "Designing Elasticsearch indices for complex, multi-domain enterprise data",
-      "Tuning search relevance and ranking for legal/tax content",
-      "Integrating Elasticsearch with existing microservices without downtime"
+      "Structuring a clean separation between frontend and backend repos",
+      "Handling auth tokens securely across deployed services"
     ],
-    "futureImprovements": [
-      "Semantic search with vector embeddings",
-      "Auto-suggest and faceted search",
-      "Search analytics and query logging"
-    ],
-    "github": "https://github.com/prafulk9155",
-    "liveDemo": "",
-    "thumbnail": "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "screenshots": [
-      "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1200"
-    ],
+    "futureImprovements": ["Rich text editor", "Comment system", "Newsletter subscription"],
+    "github": "https://github.com/prafulk9155/blogging-backend",
+    "liveDemo": "https://blog-app-backend-coral.vercel.app",
+    "thumbnail": "https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": ["https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&w=1200"],
     "featured": false,
     "order": 5
   },
   {
     "id": 6,
-    "slug": "php-angular-client-web-apps",
-    "title": "PHP & Angular Client Web Applications",
-    "shortDescription": "Built and maintained 7+ dynamic web applications using PHP, Angular, HTML, CSS, and MySQL for diverse client projects.",
-    "fullDescription": "During the early phase of my career at Oges Solutions, I built and maintained dynamic web applications using PHP, Angular, HTML, and CSS. Contributed to 7+ successful client projects spanning various domains. Managed and optimized MySQL databases for efficient data storage and retrieval. Designed responsive, user-friendly interfaces that improved user engagement across multiple platforms, and automated server-side processes with cron jobs and shell scripts.",
-    "category": ["Full Stack", "Web Development", "PHP"],
-    "techStack": ["PHP", "Angular", "HTML5", "CSS3", "MySQL", "JavaScript", "Cron Jobs", "Shell Scripts"],
+    "slug": "chat-app",
+    "title": "Chat App — Real-Time Collaboration",
+    "shortDescription": "Real-time chat application for team collaboration built with JavaScript and WebSocket technology.",
+    "fullDescription": "A real-time chat application built for team collaboration. Supports live messaging, multiple chat rooms, and user presence indicators. Built with JavaScript on both frontend and backend, leveraging WebSocket for low-latency bidirectional communication.",
+    "category": ["Full Stack", "Real-Time", "Communication"],
+    "techStack": ["JavaScript", "Node.js", "WebSocket", "HTML5", "CSS3"],
     "features": [
-      "7+ dynamic client web applications",
-      "Optimized MySQL databases with efficient queries and indexing",
-      "Responsive, mobile-friendly interfaces",
-      "Server-side automation with cron jobs and shell scripts",
-      "Thorough testing and debugging for production quality",
-      "Cross-platform user experience improvements"
+      "Real-time messaging with WebSocket",
+      "Multiple chat rooms/channels",
+      "User presence and online indicators",
+      "Message history",
+      "Responsive UI for desktop and mobile"
     ],
     "status": "Completed",
-    "role": "Web Developer (Project Engineer)",
-    "teamSize": "4",
-    "timeline": "Nov 2022 – Jul 2023",
+    "role": "Full Stack Developer",
+    "teamSize": "Solo",
+    "timeline": "Oct 2024 – Feb 2026",
     "challenges": [
-      "Adapting to rapidly changing client requirements",
-      "Optimizing PHP backends for high-traffic pages",
-      "Ensuring cross-browser compatibility for enterprise clients"
+      "Managing WebSocket connections at scale",
+      "Ensuring message ordering and delivery guarantees"
     ],
-    "futureImprovements": [
-      "Migration from PHP to Node.js or Python backends",
-      "Modern frontend framework upgrades",
-      "API-first architecture refactoring"
+    "futureImprovements": ["File sharing", "End-to-end encryption", "Video calls"],
+    "github": "https://github.com/prafulk9155/chat-app",
+    "liveDemo": "",
+    "thumbnail": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 6
+  },
+  {
+    "id": 7,
+    "slug": "car-rental-app",
+    "title": "Car Rental Application",
+    "shortDescription": "Full-featured car rental web application for customers to browse, book, and manage vehicle rentals.",
+    "fullDescription": "A full-featured car rental platform built with JavaScript, allowing customers to browse available vehicles, make bookings, and manage their rentals. Includes an admin panel for fleet management, booking confirmations, and customer records. One of Praful's starred repositories on GitHub.",
+    "category": ["Full Stack", "E-Commerce", "JavaScript"],
+    "techStack": ["JavaScript", "Node.js", "Express.js", "HTML5", "CSS3", "MongoDB"],
+    "features": [
+      "Vehicle browsing with search and filters",
+      "Booking and reservation management",
+      "Admin panel for fleet and customer management",
+      "Booking confirmation and status tracking",
+      "Responsive design for all devices"
     ],
-    "github": "https://github.com/prafulk9155",
+    "status": "Completed",
+    "role": "Full Stack Developer",
+    "teamSize": "Solo",
+    "timeline": "Aug 2024 – Mar 2025",
+    "challenges": [
+      "Building availability logic to prevent double bookings",
+      "Managing large vehicle image assets efficiently"
+    ],
+    "futureImprovements": ["Payment gateway integration", "GPS tracking", "Mobile app"],
+    "github": "https://github.com/prafulk9155/car_rental_app",
+    "liveDemo": "",
+    "thumbnail": "https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 7
+  },
+  {
+    "id": 8,
+    "slug": "seo-blog-generator",
+    "title": "SEO Blog Generator API",
+    "shortDescription": "Python API for generating SEO-optimized blog topics and full blog content using AI.",
+    "fullDescription": "A Python-based API for generating SEO-optimized content. The system includes a topic generation service and a full blog generation service, making it easy to produce high-quality, search-engine-friendly articles at scale. Built with Python and FastAPI.",
+    "category": ["Backend", "AI", "Python"],
+    "techStack": ["Python", "FastAPI", "REST API", "AI/LLM"],
+    "features": [
+      "SEO topic generation from keywords",
+      "Full blog post generation with AI",
+      "REST API for easy integration",
+      "Optimized output for search engines",
+      "Configurable tone and length"
+    ],
+    "status": "Completed",
+    "role": "Backend Developer",
+    "teamSize": "Solo",
+    "timeline": "May 2025 – Jun 2025",
+    "challenges": [
+      "Prompt engineering for consistent SEO-quality output",
+      "Rate limiting and API cost management"
+    ],
+    "futureImprovements": ["Web dashboard for non-technical users", "Batch generation", "Keyword analysis"],
+    "github": "https://github.com/prafulk9155/seo-api",
+    "liveDemo": "",
+    "thumbnail": "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 8
+  },
+  {
+    "id": 9,
+    "slug": "feedback-collection-app",
+    "title": "Feedback Collection App",
+    "shortDescription": "TypeScript-based full-stack feedback collection application for gathering and managing user responses.",
+    "fullDescription": "A full-stack feedback collection application built with TypeScript. Allows organisations to create feedback forms, collect responses from users, and review aggregated results. Clean UI with form validation and a backend API for persistent storage.",
+    "category": ["Full Stack", "SaaS", "TypeScript"],
+    "techStack": ["TypeScript", "React", "Node.js", "REST API"],
+    "features": [
+      "Custom feedback form builder",
+      "Response collection and storage",
+      "Aggregated results view",
+      "Form validation and error handling",
+      "Responsive, accessible UI"
+    ],
+    "status": "Completed",
+    "role": "Full Stack Developer",
+    "teamSize": "Solo",
+    "timeline": "May 2025",
+    "challenges": [
+      "Building a flexible form schema that supports multiple question types",
+      "Ensuring data integrity in response submissions"
+    ],
+    "futureImprovements": ["Analytics charts", "Export to CSV", "Email notifications"],
+    "github": "https://github.com/prafulk9155/feedback-collection-app",
+    "liveDemo": "",
+    "thumbnail": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 9
+  },
+  {
+    "id": 10,
+    "slug": "chatbot-ui",
+    "title": "Chatbot UI",
+    "shortDescription": "A clean, responsive chatbot interface built with HTML and CSS — ready to integrate with any backend AI service.",
+    "fullDescription": "A polished chatbot UI built with HTML and CSS, designed to be easily integrated with any backend AI or NLP service. Features a smooth chat bubble interface, typing indicators, and a mobile-friendly layout. Useful as a starter template for AI assistants or customer support bots.",
+    "category": ["Frontend", "AI", "UI Component"],
+    "techStack": ["HTML5", "CSS3", "JavaScript"],
+    "features": [
+      "Clean chat bubble interface",
+      "Typing indicator animation",
+      "Mobile-responsive design",
+      "Easy to integrate with any AI backend",
+      "Customisable theme and branding"
+    ],
+    "status": "Completed",
+    "role": "Frontend Developer",
+    "teamSize": "Solo",
+    "timeline": "Oct 2024 – Oct 2025",
+    "challenges": [
+      "Creating smooth CSS animations for a natural chat feel",
+      "Ensuring accessibility compliance in the chat interface"
+    ],
+    "futureImprovements": ["Voice input", "File attachment support", "Multi-language support"],
+    "github": "https://github.com/prafulk9155/chatbot_ui",
+    "liveDemo": "",
+    "thumbnail": "https://images.pexels.com/photos/8294554/pexels-photo-8294554.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 10
+  },
+  {
+    "id": 11,
+    "slug": "crm-api",
+    "title": "CRM API",
+    "shortDescription": "A RESTful CRM (Customer Relationship Management) API built with Node.js and Express for managing contacts and interactions.",
+    "fullDescription": "A RESTful API for a Customer Relationship Management system, built with JavaScript, Node.js, and Express. Supports full CRUD operations for contacts, companies, and interaction records. Designed to be a backend foundation for CRM frontends or integrations.",
+    "category": ["Backend", "API", "JavaScript"],
+    "techStack": ["JavaScript", "Node.js", "Express.js", "REST API", "MongoDB"],
+    "features": [
+      "Full CRUD for contacts, companies, and interactions",
+      "RESTful API design with proper HTTP methods",
+      "Authentication middleware",
+      "Data validation and error handling",
+      "Modular route and controller structure"
+    ],
+    "status": "Completed",
+    "role": "Backend Developer",
+    "teamSize": "Solo",
+    "timeline": "Feb 2025",
+    "challenges": [
+      "Designing a flexible data model for different CRM use cases",
+      "Implementing clean separation between routes, controllers, and models"
+    ],
+    "futureImprovements": ["Frontend dashboard", "Email integration", "Activity timeline"],
+    "github": "https://github.com/prafulk9155/CRM_API",
     "liveDemo": "",
     "thumbnail": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
     "screenshots": [],
     "featured": false,
-    "order": 6
+    "order": 11
+  },
+  {
+    "id": 12,
+    "slug": "daily-publish-automation",
+    "title": "Daily Publish Automation",
+    "shortDescription": "Python automation script for scheduled daily content publishing workflows.",
+    "fullDescription": "A Python automation tool designed to streamline daily content publishing workflows. Handles scheduling, content processing, and automated publishing to target platforms. Built with Python and leverages cron-style scheduling for reliable execution.",
+    "category": ["Backend", "Automation", "Python"],
+    "techStack": ["Python", "Automation", "Scheduling", "REST API"],
+    "features": [
+      "Automated daily content publishing",
+      "Scheduled execution with cron-style triggers",
+      "Content processing and formatting",
+      "Error handling and retry logic",
+      "Logging and monitoring"
+    ],
+    "status": "In Progress",
+    "role": "Backend Developer",
+    "teamSize": "Solo",
+    "timeline": "Jan 2025 – Present",
+    "challenges": [
+      "Ensuring reliable scheduling without missing publish windows",
+      "Handling API rate limits from publishing platforms"
+    ],
+    "futureImprovements": ["Web dashboard for configuration", "Multi-platform support", "Analytics"],
+    "github": "https://github.com/prafulk9155/daily-publish",
+    "liveDemo": "",
+    "thumbnail": "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "screenshots": [],
+    "featured": false,
+    "order": 12
   }
 ]
